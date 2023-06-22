@@ -10,6 +10,18 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       dishname: {
+        type: Sequelize.INTEGER,
+        references: {
+          model: "Orders",
+          key: "id"
+        },
+        onUpdate: 'CASCADE',
+        onDelete: 'CASCADE'
+      },
+      image: {
+        type: Sequelize.INTEGER
+      },
+      categoy_id: {
         type: Sequelize.INTEGER
       },
       createdAt: {

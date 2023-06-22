@@ -15,6 +15,13 @@ module.exports = {
       dish_id: {
         type: Sequelize.INTEGER
       },
+      fecha: {
+        type: Sequelize.DATE
+      },
+      timer: {
+        type: Sequelize.TIME
+      },
+
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE
